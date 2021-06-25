@@ -156,7 +156,7 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-.nav__logo,.navtoggle{
+.nav__logo,.nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -173,7 +173,7 @@ img{
 @media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -191,10 +191,35 @@ img{
 .nav__link{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.nav__link:hover{
+    color: var(--first-color);
+}
+.nav__icon{
+    font-size: 1.2rem;
+
+}
+.nav__close{
+    position: absolute;
+    right: 1.3em;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+.nav__close:hover{
+    color: var(--first-color-alt);
+
 }
 
 /* show menu */
-
+.show-menu{
+    bottom: 0;
+}
 
 /* Active link */
 
