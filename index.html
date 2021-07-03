@@ -34,11 +34,13 @@
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
+                    <!-- 
                     <li class="nav__item">
                         <a href="#services" class="nav__link">
                             <i class="uil uil-briefcase-alt nav__icon"></i> Services
                         </a>
                     </li>
+                    -->
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
@@ -158,37 +160,183 @@
             </section>
 
             <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+            <section class="skills section" id="skills">                
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
-
                 <div class="skills__container container grid">
+
                     <div>
-                        <!-- ---------- SKILL 1 ------------>
-                        <div class="skills__content">
+
+                        <!-- ---------- FRONTEND ---------- -->
+                        <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
 
                                 <div>
-                                    <h1 class="skills__title">Frontend Developer</h1>
-                                    <span class="skills__subtitle"></span>
+                                    <h1 class="skills__title">Frontend</h1>
+                                    <span class="skills__subtitle">0 years</span>
                                 </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__num">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__num">Basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__num">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <!-- ACA IRIA REACT :D
+                                <div class="skills__data">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__num">Basic-intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                                -->
+
                             </div>
                         </div>
+                        <!-- ---------- BACKEND ---------- -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+                                <!-- Aca podria ir Firebase, PHP, Pyhton, etc. -->
+                                <div>
+                                    <h1 class="skills__title">Backend</h1>
+                                    <span class="skills__subtitle">0 years</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+
+                                <!-- En caso de agregar mas, copiar este modulo. -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Node JS</h3>
+                                        <span class="skills__num">Basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__node"></span>
+                                    </div>
+                                </div>                                
+
+                            </div>
+                        </div>
+                        <!-- ---------- DEV TOOLS ---------- -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-flask skills__icon"></i>                                    
+                                <div>
+                                    <h1 class="skills__title">Dev Tools</h1>
+                                </div>    
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>                                
+                            <div class="skills__list grid">
+
+                                <!-- En caso de agregar mas, copiar este modulo. -->
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__num">Basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>                                
+
+                            </div>
+                        </div>                          
+                        
                     </div>
                 </div>
             </section>
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
 
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i> Education     
+                            <!--  <i class="uil uil-briefcase-alt"></i> Work -->                     
+                        </div>
+                    </div>
 
-            </section>
+                    <div class="qualification__sections">
+                        <!-- --------------- QUALIFICATION CONTENT STUDY --------------- -->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!-- ------------- CONTENT 1 ------------- -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bachelor's degree of Data Science</h3>
+                                    <span class="qualification__subtitle">Argentina University</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>2020 - Today
+                                    </div>
+                                </div>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!-- ------------- FIN DEL MODULO ------------ -->
 
+                            <!-- ------------- CONTENT 2 -------------- -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Web Developer Bootcamp</h3>
+                                    <span class="qualification__subtitle">Argentina Institute</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>2021 - Today
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!-- ------------ FIN DEL MODULO ------------ -->                           
+                            
+                        </div> <!-- En caso de agregar un futuro trabajo solo bastaria con copiar el modulo "qualification__content"-->
+                        <!-- --------------- QUALIFICATION CONTENT WORK --------------- -->
+                    </div>
+                </div>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
@@ -197,11 +345,12 @@
 
             </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
+            <!--==================== PROJECT IN MIND ====================
             <section class="project section">
 
 
             </section>
+            -->
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
 
