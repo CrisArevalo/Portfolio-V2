@@ -472,13 +472,13 @@ img{
 .qualification__tabs{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-2);
 }
 
 .qualification__button{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    cursor: pointer;
+    /* cursor: pointer; */ 
 }
 
 .qualification__button:hover{
@@ -504,7 +504,7 @@ img{
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-0-25);
 }
 
 .qualification__calendar{
@@ -535,8 +535,35 @@ img{
 .qualification__active[data-content]{
     display: block;
 }
-/*==================== SERVICES ====================*/
 
+.qualification__button.qualification__active{
+    color: var(--first-color);
+}
+/*==================== SERVICES ====================*/
+.services__container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.services__content{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+.services__content:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+}
+
+.services__icon{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
 
 /* Active Modal */
 

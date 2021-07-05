@@ -45,13 +45,13 @@ skillsHeader.forEach((t) => {
     t.addEventListener("click", toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll("[data-target]"),
-    tabContents = document.querySelectorAll("[data-content]");
+/*==================== QUALIFICATION TABS ====================
+let tabs = document.querySelectorAll("[data-target]");
+let tabContents = document.querySelectorAll("[data-content]");
 
-tabs.forEach(t => {
-    t.addEventListener("click", () => {
-        const target = document.querySelector(t.dataset.target);
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.target);
 
         tabContents.forEach(tabContent => {
             tabContent.classList.remove("qualification__active");
@@ -59,10 +59,13 @@ tabs.forEach(t => {
         
         target.classList.add("qualification__active");
 
-        tabs.forEach(t => {
-            t.classList.remove("qualification__active");
+        tab.forEach(tab => {
+            tab.classList.remove("qualification__active")
         })
 
-        tabs.classList.add("qualification__active")
+        tab.classList.add("qualification__active")
     })
 })
+/* LO DEJO PARA MAS ADELANTE CUANDO TENGA UN EMPLEO QUE PONER. */ 
+
+/* =================================================== */
