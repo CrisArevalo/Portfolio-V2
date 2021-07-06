@@ -69,3 +69,26 @@ tabs.forEach(tab => {
 /* LO DEJO PARA MAS ADELANTE CUANDO TENGA UN EMPLEO QUE PONER. */ 
 
 /* =================================================== */
+
+/* ==================== SERVICES MODAL ==================== */
+const modalViews = document.querySelectorAll(".services__modal");
+const modalBtns = document.querySelectorAll(".services__button");
+const modalClose = document.querySelectorAll(".services__modal-close");
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add("active-modal");
+}
+
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener("click", () => {
+        modal(i);
+    })
+})
+
+modalClose.forEach((modalClose) => {
+    modalClose.addEventListener("click", () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove("active-modal");
+        })
+    })
+})
