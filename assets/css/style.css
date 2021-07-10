@@ -19,6 +19,8 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color),12%,90%);
+    --scroll-thumb-color: hsl(var(--hue-color),12%,80%);
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', Sans-serif;
@@ -67,10 +69,33 @@
 }
 
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme{
+    /* HSL color mode */    
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);  
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);    
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 5%, 5%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color),12%,48%);
+    --scroll-thumb-color: hsl(var(--hue-color),12%,36%);
+}
 
 /*========== Button Dark/Light ==========*/
+.nav__btns{
+    display: flex;
+}
 
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: var(--first-color);
+}
 
 /*==================== BASE ====================*/
 *{
@@ -136,7 +161,7 @@ img{
 }
 .grid{
     display: grid;
-    gap:1.5rem;
+    gap: 1.5rem;
 
 }
 .header{
@@ -566,7 +591,7 @@ img{
 .services__content{
     position: relative;
     background-color: var(--container-color);
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    padding: 2.5rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     transition: .3s;
@@ -580,7 +605,7 @@ img{
     display: block;
     font-size: 1.5rem;
     color: var(--first-color);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-0-25);
 }
 
 .services__title{
@@ -822,8 +847,21 @@ img{
     bottom: 5rem;
 }
 
-/*========== SCROLL BAR ==========*/
+/* ========== SCROLL BAR ========== */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    color: var(--text-color-light);
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
