@@ -82,10 +82,6 @@ body.dark-theme{
 }
 
 /*========== Button Dark/Light ==========*/
-.nav__btns{
-    display: flex;
-}
-
 .change-theme{
     font-size: 1.25rem;
     color: var(--title-color);
@@ -140,6 +136,7 @@ img{
 .section{
     padding: 2rem 0 4rem;
 }
+
 .section__title{
     font-size: var(--h1-font-size);
 }
@@ -159,11 +156,12 @@ img{
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
+
 .grid{
     display: grid;
     gap: 1.5rem;
-
 }
+
 .header{
     width: 100px;
     position: fixed;
@@ -181,20 +179,26 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-.nav__logo,.nav__toggle{
+
+.nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
-}
-.nav__logo:hover{
-    color: var(--first-color);
-}
-.nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
 }
+
+.nav__change{
+    padding-left: var(--mb-1-5);
+}
+
+.nav__btns{
+    font-weight: var(--mb-1-5);
+}
+
 .nav__toggle:hover{
     color: var(--first-color);
 }
+
 @media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
@@ -213,6 +217,7 @@ img{
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
+
 .nav__link{
     display: flex;
     flex-direction: column;
@@ -224,10 +229,11 @@ img{
 .nav__link:hover{
     color: var(--first-color);
 }
+
 .nav__icon{
     font-size: 1.2rem;
-
 }
+
 .nav__close{
     position: absolute;
     right: 1.3em;
@@ -236,6 +242,7 @@ img{
     cursor: pointer;
     color: var(--first-color);
 }
+
 .nav__close:hover{
     color: var(--first-color-alt);
 
@@ -863,11 +870,77 @@ img{
     color: var(--text-color-light);
 }
 
-/*==================== MEDIA QUERIES ====================*/
+/* ==================== MEDIA QUERIES ==================== */
 /* For small devices */
+@media screen and (max-width: 350px) {
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
 
+    .nav__menu{
+        padding: 2rem .25rem 4rem;
+    }
+
+    .nav__list{
+        column-gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home__blob{
+        width: 180px;
+    }
+
+    .skills__title{
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification__data{
+        gap: .5rem;
+    }
+
+    .services__container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .services__content{
+        padding-right: 3.5rem;
+    }
+
+    .services__modal{
+        padding: 0 .5rem;
+    }
+}
 
 /* For medium devices */
+@media screen and (min-width:568px){
+    .home__content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
+    
+    .home__data{
+        grid-column: initial;
+    }
 
+    .home__img{
+        order: 1;
+        justify-self: center;
+    }
+
+    .portfolio__content,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__sections{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
 
 /* For large devices */
