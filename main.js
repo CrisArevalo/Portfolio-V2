@@ -93,7 +93,7 @@ modalClose.forEach((modalClose) => {
     })
 })
 
-/* ==================== SWIPER ==================== */
+/* ==================== SWIPER PORTFOLIO ==================== */
 let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
@@ -107,6 +107,9 @@ let swiper = new Swiper(".portfolio__container", {
         clickable: true
     },
 });
+
+/* ==================== SWIPER CERTIFICATES ==================== */
+
 
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
 const sections = document.querySelectorAll("section[id]");

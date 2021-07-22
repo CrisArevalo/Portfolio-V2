@@ -492,14 +492,17 @@ img{
     background-color: var(--first-color);
 }
 
+/* INTERMEDIATE SKILLS */
 .skills__html,
 .skills__js{
     width: 50%;
 }
 
+/* BASIC SKILLS */
 .skills__css,
 .skills__node,
-.skills__git{
+.skills__git,
+.skills__ts{
     width: 30%;
 }
 
